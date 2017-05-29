@@ -4,7 +4,6 @@ import devVsQA.Main;
 import devVsQA.model.User;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
-import javafx.scene.control.DialogPane;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
@@ -53,8 +52,6 @@ public class RegisterDialogController {
             alert.setTitle("Erreur");
             alert.setHeaderText("Certains champs sont invalides :");
             alert.setContentText(errorMessage);
-            DialogPane dialogPane = alert.getDialogPane();
-            dialogPane.getStyleClass().add("myDialog");
 
             alert.showAndWait();
         } else {
@@ -83,6 +80,12 @@ public class RegisterDialogController {
 
         if (password == null || password.length() < 5) {
             errorMessage += "Mot de passe invalide !\n";
+        } else {
+            Pattern VALID_EMAIL_ADDRESS_REGEX = Pattern.compile("^(?=.*\\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$", Pattern.CASE_INSENSITIVE);
+            Matcher matcher = VALID_EMAIL_ADDRESS_REGEX .matcher(password);
+            if (!matcher.find()) {
+                errorMessage += "Mot de passe invalide !\n";
+            }
         }
 
         return errorMessage;

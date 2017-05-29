@@ -1,5 +1,6 @@
 package devVsQA;
 
+import devVsQA.controller.ConnectionDialogController;
 import devVsQA.controller.RegisterDialogController;
 import devVsQA.controller.StartLayoutController;
 import devVsQA.model.User;
@@ -76,6 +77,33 @@ public class Main extends Application {
             // Set the user into the controller.
             RegisterDialogController controller = loader.getController();
             controller.setMain(this);
+            controller.setDialogStage(dialogStage);
+
+            // Show the dialog and wait until the user closes it
+            dialogStage.showAndWait();
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void showConnectionDialog() {
+        try {
+            // Load the fxml file and create a new stage for the popup dialog.
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(Main.class.getResource("/ConnectionDialog.fxml"));
+            AnchorPane page = loader.load();
+
+            // Create the dialog Stage.
+            Stage dialogStage = new Stage();
+            dialogStage.setTitle("Connexion");
+            dialogStage.initModality(Modality.WINDOW_MODAL);
+            dialogStage.initOwner(primaryStage);
+            Scene scene = new Scene(page);
+            dialogStage.setScene(scene);
+
+            // Set the user into the controller.
+            ConnectionDialogController controller = loader.getController();
             controller.setDialogStage(dialogStage);
 
             // Show the dialog and wait until the user closes it

@@ -11,10 +11,6 @@ public class StartLayoutController {
         this.main = main;
     }
 
-    @FXML
-    private void initialize() {
-    }
-
     public StartLayoutController() {
     }
 
@@ -25,7 +21,7 @@ public class StartLayoutController {
 
     @FXML
     private void handleConnection() {
-
+        main.showConnectionDialog();
     }
 
     @FXML
