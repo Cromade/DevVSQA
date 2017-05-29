@@ -2,6 +2,7 @@ package devVsQA;
 
 import devVsQA.controller.ConnectionDialogController;
 import devVsQA.controller.RegisterDialogController;
+import devVsQA.controller.ResetPasswordDialogController;
 import devVsQA.controller.StartLayoutController;
 import devVsQA.model.User;
 import javafx.application.Application;
@@ -19,14 +20,15 @@ public class Main extends Application {
 
     private Stage primaryStage;
     private List<User> userList = new ArrayList<User>();
+    private User connectedUser = null;
 
     @Override
     public void start(Stage primaryStage) throws Exception{
 
         //Some raw data
-        User user1 = new User("Farault", "Bastien", "Xenodeux", "faraultbastien@gmail.com", "motdepasse1", "08/03/1994", "5 rue de truc", "Paris", "75000");
-        User user2 = new User("Fernandes", "Dylan", "Cromade", "fernandesantunesdylan@gmail.com", "motdepasse2", "06/09/1994", "6 rue de machin", "Paris", "75000");
-        User user3 = new User("Guitton", "Candice", "Billy8You", "guittoncandice@gmail.com", "motdepasse3", "15/08/1992", "7 rue de bidule", "Paris", "75000");
+        User user1 = new User("Farault", "Bastien", "Xenodeux", "faraultbastien@gmail.com", "Motdepasse1", "08/03/1994", "5 rue de truc", "Paris", "75000");
+        User user2 = new User("Fernandes", "Dylan", "Cromade", "fernandesantunesdylan@gmail.com", "Motdepasse2", "06/09/1994", "6 rue de machin", "Paris", "75000");
+        User user3 = new User("Guitton", "Candice", "Billy8You", "guittoncandice@gmail.com", "Motdepasse3", "15/08/1992", "7 rue de bidule", "Paris", "75000");
         userList.add(user1);
         userList.add(user2);
         userList.add(user3);
@@ -104,6 +106,35 @@ public class Main extends Application {
 
             // Set the user into the controller.
             ConnectionDialogController controller = loader.getController();
+            controller.setMain(this);
+            controller.setDialogStage(dialogStage);
+
+            // Show the dialog and wait until the user closes it
+            dialogStage.showAndWait();
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void showResetPasswordDialog() {
+        try {
+            // Load the fxml file and create a new stage for the popup dialog.
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(Main.class.getResource("/ResetPasswordDialog.fxml"));
+            AnchorPane page = loader.load();
+
+            // Create the dialog Stage.
+            Stage dialogStage = new Stage();
+            dialogStage.setTitle("Reset Password");
+            dialogStage.initModality(Modality.WINDOW_MODAL);
+            dialogStage.initOwner(primaryStage);
+            Scene scene = new Scene(page);
+            dialogStage.setScene(scene);
+
+            // Set the user into the controller.
+            ResetPasswordDialogController controller = loader.getController();
+            controller.setMain(this);
             controller.setDialogStage(dialogStage);
 
             // Show the dialog and wait until the user closes it
@@ -116,6 +147,22 @@ public class Main extends Application {
 
     public void addToUserList(User user) {
         userList.add(user);
+    }
+
+    public List<User> getUserList() {
+        return userList;
+    }
+
+    public void setConnectedUser(User user) {
+        connectedUser = user;
+    }
+
+    public User getConnectedUser() {
+        return connectedUser;
+    }
+
+    public Stage getPrimaryStage() {
+        return primaryStage;
     }
 
     public static void main(String[] args) {

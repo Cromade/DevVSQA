@@ -2,6 +2,7 @@ package devVsQA.controller;
 
 import devVsQA.Main;
 import javafx.fxml.FXML;
+import javafx.scene.control.Alert;
 
 public class StartLayoutController {
 
@@ -26,6 +27,16 @@ public class StartLayoutController {
 
     @FXML
     private void handleResetPassword() {
+        if (main.getConnectedUser() == null) {
+            // Show the error message.
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.initOwner(main.getPrimaryStage());
+            alert.setTitle("Erreur");
+            alert.setHeaderText("Veuillez vous connecter !");
 
+            alert.showAndWait();
+        } else {
+            main.showResetPasswordDialog();
+        }
     }
 }

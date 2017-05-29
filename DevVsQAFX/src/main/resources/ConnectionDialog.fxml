@@ -9,6 +9,7 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
+<?import javafx.scene.control.PasswordField?>
 <AnchorPane prefHeight="175.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="devVsQA.controller.ConnectionDialogController">
    <children>
       <GridPane layoutX="94.0" layoutY="118.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="20.0">
@@ -22,7 +23,7 @@
         </rowConstraints>
          <children>
             <TextField fx:id="emailField" promptText="Ex : monemail@email.com" GridPane.columnIndex="1" />
-            <TextField fx:id="passwordField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <PasswordField fx:id="passwordField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
             <Label text="Email" />
             <Label text="Mot de passe" GridPane.rowIndex="1" />
          </children>

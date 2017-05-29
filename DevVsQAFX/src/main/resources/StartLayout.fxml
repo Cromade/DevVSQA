@@ -14,6 +14,6 @@
       </Label>
       <Button layoutX="50.0" layoutY="100.0" mnemonicParsing="false" onAction="#handleRegister" prefHeight="25.0" prefWidth="200.0" text="Inscription" />
       <Button layoutX="50.0" layoutY="170.0" mnemonicParsing="false" onAction="#handleConnection" prefHeight="25.0" prefWidth="200.0" text="Authentification" />
-      <Button layoutX="50.0" layoutY="240.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="200.0" text="Reset le mot de passe" />
+      <Button layoutX="50.0" layoutY="240.0" mnemonicParsing="false" onAction="#handleResetPassword" prefHeight="25.0" prefWidth="200.0" text="Reset le mot de passe" />
    </children>
 </AnchorPane>
