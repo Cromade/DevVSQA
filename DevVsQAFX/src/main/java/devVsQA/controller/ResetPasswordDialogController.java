@@ -10,7 +10,7 @@ import javafx.stage.Stage;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class ResetPasswordDialogController {
+public class ResetPasswordDialogController implements IResetPasswordDialogController{
 
     @FXML
     private TextField oldPasswordField;
@@ -63,7 +63,7 @@ public class ResetPasswordDialogController {
         }
     }
 
-    private String isResetValid(String oldPasswordField, String newPasswordFieldOne, String newPasswordFieldTwo) {
+    public String isResetValid(String oldPasswordField, String newPasswordFieldOne, String newPasswordFieldTwo) {
 
         String errorMessage ="";
         Pattern VALID_EMAIL_ADDRESS_REGEX = Pattern.compile("^(?=.*\\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$", Pattern.CASE_INSENSITIVE);

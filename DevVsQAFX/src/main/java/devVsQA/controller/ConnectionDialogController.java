@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class ConnectionDialogController {
+public class ConnectionDialogController implements IConnectionDialogController{
     @FXML
     private TextField emailField;
     @FXML
@@ -27,7 +27,7 @@ public class ConnectionDialogController {
 
     @FXML
     private void handleOk() {
-        String errorMessage = isEmailAndPasswordValid(emailField.getText(), passwordField.getText());
+        String errorMessage = isConnectionValueValid(emailField.getText(), passwordField.getText());
 
         if (errorMessage.length() > 0) {
             // Show the error message.
@@ -105,7 +105,7 @@ public class ConnectionDialogController {
         dialogStage.close();
     }
 
-    public static String isEmailAndPasswordValid(String email, String password) {
+    public String isConnectionValueValid(String email, String password) {
         String errorMessage = "";
         if (email == null || email.length() == 0) {
             errorMessage += "Email invalide !\n";

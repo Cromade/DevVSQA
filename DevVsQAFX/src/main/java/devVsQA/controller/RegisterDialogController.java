@@ -10,7 +10,7 @@ import javafx.stage.Stage;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class RegisterDialogController {
+public class RegisterDialogController implements IRegisterDialogController{
 
     @FXML
     private TextField lastnameField;
@@ -66,7 +66,7 @@ public class RegisterDialogController {
         dialogStage.close();
     }
 
-    public static String isEmailAndPasswordValid(String email, String password) {
+    public String isEmailAndPasswordValid(String email, String password) {
         String errorMessage = "";
         if (email == null || email.length() == 0) {
             errorMessage += "Email invalide !\n";
@@ -91,7 +91,7 @@ public class RegisterDialogController {
         return errorMessage;
     }
 
-    public static String isInputValid(String lastname, String firstname, String username, String email, String password, String birthday, String address, String city, String postalCode) {
+    public String isInputValid(String lastname, String firstname, String username, String email, String password, String birthday, String address, String city, String postalCode) {
         String errorMessage = "";
 
         if (lastname == null || lastname.length() == 0) {
