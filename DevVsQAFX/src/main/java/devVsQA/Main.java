@@ -137,6 +137,9 @@ public class Main extends Application {
             controller.setMain(this);
             controller.setDialogStage(dialogStage);
 
+            //at this point the user is not null
+            controller.setConnectedUser(connectedUser);
+
             // Show the dialog and wait until the user closes it
             dialogStage.showAndWait();
 

@@ -78,7 +78,7 @@ public class RegisterDialogController {
             }
         }
 
-        if (password == null || password.length() < 5) {
+        if (password == null) {
             errorMessage += "Mot de passe invalide !\n";
         } else {
             Pattern VALID_EMAIL_ADDRESS_REGEX = Pattern.compile("^(?=.*\\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$", Pattern.CASE_INSENSITIVE);

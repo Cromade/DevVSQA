@@ -12,9 +12,6 @@ public class StartLayoutController {
         this.main = main;
     }
 
-    public StartLayoutController() {
-    }
-
     @FXML
     private void handleRegister() {
         main.showRegisterDialog();
