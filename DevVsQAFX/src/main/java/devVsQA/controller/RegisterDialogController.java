@@ -117,7 +117,7 @@ public class RegisterDialogController implements IRegisterDialogController{
                     int month = Integer.parseInt(birthday.substring(3,5));
                     int day = Integer.parseInt(birthday.substring(0,2));
 
-                    if (month > 0 && month < 12) {
+                    if (month > 0 && month <= 12) {
 
                         if (month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12) {
                             if (day > 0 && day <= 31) {
