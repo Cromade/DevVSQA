@@ -59,42 +59,7 @@
     <favorites_list name="JavaFxApplication" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ResetPasswordDialogController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/devVsQA/controller/ResetPasswordDialogController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="76" column="20" lean-forward="true" selection-start-line="76" selection-start-column="20" selection-end-line="76" selection-end-column="20" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/devVsQA/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="28" column="156" lean-forward="false" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="156" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ResetPasswordDialogControllerTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/ResetPasswordDialogControllerTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="689">
-              <caret line="63" column="0" lean-forward="true" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -156,9 +121,9 @@
         <option value="$PROJECT_DIR$/src/main/java/devVsQA/controller/ConnectionDialogController.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/devVsQA/controller/RegisterDialogController.java" />
-        <option value="$PROJECT_DIR$/test/RegisterDialogControllerTest.java" />
         <option value="$PROJECT_DIR$/test/ConnectionDialogControllerTest.java" />
         <option value="$PROJECT_DIR$/test/ResetPasswordDialogControllerTest.java" />
+        <option value="$PROJECT_DIR$/test/RegisterDialogControllerTest.java" />
       </list>
     </option>
   </component>
@@ -201,7 +166,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -362,6 +326,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -405,15 +370,15 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ResetPasswordDialogControllerTest">
-    <configuration default="false" name="ConnectionDialogControllerTest.should_be_ok" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.RegisterDialogControllerTest.should_return_invalid_birthday_letters">
+    <configuration default="false" name="RegisterDialogControllerTest.should_return_user_already_existe" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="DevVsQAFX" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ConnectionDialogControllerTest" />
-      <option name="METHOD_NAME" value="should_be_ok" />
+      <option name="MAIN_CLASS_NAME" value="RegisterDialogControllerTest" />
+      <option name="METHOD_NAME" value="should_return_user_already_existe" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -427,35 +392,14 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="ResetPasswordDialogControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="RegisterDialogControllerTest.should_return_invalid_birthday" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="DevVsQAFX" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ResetPasswordDialogControllerTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="ResetPasswordDialogControllerTest.should_return_invalid_oldpassword_empty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="DevVsQAFX" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ResetPasswordDialogControllerTest" />
-      <option name="METHOD_NAME" value="should_return_invalid_oldpassword_empty" />
+      <option name="MAIN_CLASS_NAME" value="RegisterDialogControllerTest" />
+      <option name="METHOD_NAME" value="should_return_invalid_birthday" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -469,14 +413,14 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="ResetPasswordDialogControllerTest.should_return_invalid_oldpassword" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="RegisterDialogControllerTest.should_return_invalid_postal_letters" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="DevVsQAFX" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ResetPasswordDialogControllerTest" />
-      <option name="METHOD_NAME" value="should_return_invalid_oldpassword" />
+      <option name="MAIN_CLASS_NAME" value="RegisterDialogControllerTest" />
+      <option name="METHOD_NAME" value="should_return_invalid_postal_letters" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -490,14 +434,35 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="ResetPasswordDialogControllerTest.should_return_invalid_newpassword1_empty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="RegisterDialogControllerTest.should_return_invalid_city_number" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="DevVsQAFX" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ResetPasswordDialogControllerTest" />
-      <option name="METHOD_NAME" value="should_return_invalid_newpassword1_empty" />
+      <option name="MAIN_CLASS_NAME" value="RegisterDialogControllerTest" />
+      <option name="METHOD_NAME" value="should_return_invalid_city_number" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="RegisterDialogControllerTest.should_return_invalid_birthday_letters" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="DevVsQAFX" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RegisterDialogControllerTest" />
+      <option name="METHOD_NAME" value="should_return_invalid_birthday_letters" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -923,19 +888,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Application.Main" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.ConnectionDialogControllerTest.should_be_ok" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.ResetPasswordDialogControllerTest" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.ResetPasswordDialogControllerTest.should_return_invalid_oldpassword_empty" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.ResetPasswordDialogControllerTest.should_return_invalid_oldpassword" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.ResetPasswordDialogControllerTest.should_return_invalid_newpassword1_empty" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.RegisterDialogControllerTest.should_return_user_already_existe" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.RegisterDialogControllerTest.should_return_invalid_birthday" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.RegisterDialogControllerTest.should_return_invalid_postal_letters" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.RegisterDialogControllerTest.should_return_invalid_city_number" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.RegisterDialogControllerTest.should_return_invalid_birthday_letters" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.ResetPasswordDialogControllerTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.ResetPasswordDialogControllerTest.should_return_invalid_newpassword1_empty" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.ResetPasswordDialogControllerTest.should_return_invalid_oldpassword" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.ResetPasswordDialogControllerTest.should_return_invalid_oldpassword_empty" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.ConnectionDialogControllerTest.should_be_ok" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.RegisterDialogControllerTest.should_return_invalid_birthday_letters" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.RegisterDialogControllerTest.should_return_invalid_city_number" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.RegisterDialogControllerTest.should_return_invalid_postal_letters" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.RegisterDialogControllerTest.should_return_invalid_birthday" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.RegisterDialogControllerTest.should_return_user_already_existe" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -963,27 +928,27 @@
       <workItem from="1496505044899" duration="1739000" />
       <workItem from="1496506879157" duration="665000" />
       <workItem from="1496580027316" duration="1160000" />
-      <workItem from="1496581948242" duration="503000" />
+      <workItem from="1496581948242" duration="920000" />
+      <workItem from="1496584212377" duration="1065000" />
+      <workItem from="1496586049068" duration="462000" />
+      <workItem from="1496586623937" duration="1052000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ResetPasswordDialogControllerTest - 2017.06.04 at 15h 12m 53s.xml">
-      <configuration name="ResetPasswordDialogControllerTest" configurationId="JUnit" />
+    <history-entry file="RegisterDialogControllerTest_should_return_invalid_birthday - 2017.06.04 at 16h 38m 38s.xml">
+      <configuration name="RegisterDialogControllerTest.should_return_invalid_birthday" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ResetPasswordDialogControllerTest_should_return_invalid_newpassword1_empty - 2017.06.03 at 18h 18m 21s.xml">
-      <configuration name="ResetPasswordDialogControllerTest.should_return_invalid_newpassword1_empty" configurationId="JUnit" />
+    <history-entry file="RegisterDialogControllerTest_should_return_invalid_birthday_letters - 2017.06.04 at 16h 47m 21s.xml">
+      <configuration name="RegisterDialogControllerTest.should_return_invalid_birthday_letters" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ResetPasswordDialogControllerTest_should_return_invalid_newpassword1_empty - 2017.06.03 at 18h 29m 15s.xml">
-      <configuration name="ResetPasswordDialogControllerTest.should_return_invalid_newpassword1_empty" configurationId="JUnit" />
+    <history-entry file="RegisterDialogControllerTest_should_return_invalid_city_number - 2017.06.04 at 16h 46m 26s.xml">
+      <configuration name="RegisterDialogControllerTest.should_return_invalid_city_number" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ResetPasswordDialogControllerTest_should_return_invalid_newpassword1_empty - 2017.06.03 at 18h 29m 36s.xml">
-      <configuration name="ResetPasswordDialogControllerTest.should_return_invalid_newpassword1_empty" configurationId="JUnit" />
+    <history-entry file="RegisterDialogControllerTest_should_return_invalid_postal_letters - 2017.06.04 at 16h 46m 22s.xml">
+      <configuration name="RegisterDialogControllerTest.should_return_invalid_postal_letters" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ResetPasswordDialogControllerTest_should_return_invalid_newpassword1_empty - 2017.06.04 at 14h 42m 47s.xml">
-      <configuration name="ResetPasswordDialogControllerTest.should_return_invalid_newpassword1_empty" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ResetPasswordDialogControllerTest_should_return_invalid_newpassword1_empty - 2017.06.04 at 14h 45m 33s.xml">
+    <history-entry file="ResetPasswordDialogControllerTest_should_return_invalid_newpassword1_empty - 2017.06.04 at 15h 57m 09s.xml">
       <configuration name="ResetPasswordDialogControllerTest.should_return_invalid_newpassword1_empty" configurationId="JUnit" />
     </history-entry>
     <history-entry file="ResetPasswordDialogControllerTest_should_return_invalid_oldpassword - 2017.06.03 at 17h 59m 17s.xml">
@@ -998,13 +963,15 @@
     <history-entry file="ResetPasswordDialogControllerTest_should_return_invalid_oldpassword_empty - 2017.06.03 at 17h 58m 49s.xml">
       <configuration name="ResetPasswordDialogControllerTest.should_return_invalid_oldpassword_empty" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ResetPasswordDialogControllerTest_should_return_same_as_oldpassword - 2017.06.04 at 16h 08m 51s.xml">
+      <configuration name="ResetPasswordDialogControllerTest.should_return_same_as_oldpassword" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13891000" />
+    <option name="totallyTimeSpent" value="16887000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="49" y="22" width="1391" height="878" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1016,12 +983,12 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3426396" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15482233" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17568569" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1823573" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1090,7 +1057,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1107,13 +1074,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/StartLayout.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
           <caret line="14" column="94" lean-forward="false" selection-start-line="14" selection-start-column="94" selection-end-line="14" selection-end-column="94" />
         </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/devVsQA/Main.java">
@@ -1132,13 +1099,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/RegisterDialog.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1080">
           <caret line="54" column="72" lean-forward="false" selection-start-line="54" selection-start-column="48" selection-end-line="54" selection-end-column="72" />
         </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/devVsQA/controller/RegisterDialogController.java">
@@ -1165,13 +1132,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/StartLayout.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
           <caret line="14" column="94" lean-forward="false" selection-start-line="14" selection-start-column="94" selection-end-line="14" selection-end-column="94" />
         </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/devVsQA/Main.java">
@@ -1227,13 +1194,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/StartLayout.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
           <caret line="7" column="242" lean-forward="false" selection-start-line="7" selection-start-column="242" selection-end-line="7" selection-end-column="242" />
         </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/devVsQA/Main.java">
@@ -1267,13 +1234,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/StartLayout.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
           <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
         </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/devVsQA/Main.java">
@@ -1300,13 +1267,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/StartLayout.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
           <caret line="7" column="11" lean-forward="false" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
         </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/devVsQA/Main.java">
@@ -1318,13 +1285,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/StartLayout.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
           <caret line="7" column="11" lean-forward="true" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
         </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/devVsQA/controller/StartLayoutController.java">
@@ -1344,43 +1311,43 @@
     <entry file="jar://$USER_HOME$/Application/jdk1.8.0_121/javafx-src.zip!/javafx/scene/control/Labeled.java" />
     <entry file="jar://$USER_HOME$/Application/jdk1.8.0_121/javafx-src.zip!/javafx/scene/layout/Region.java" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/ConnectionDialog.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="500">
           <caret line="25" column="26" lean-forward="false" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/RegisterDialog.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/RegisterDialog.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1060">
           <caret line="53" column="89" lean-forward="false" selection-start-line="53" selection-start-column="69" selection-end-line="53" selection-end-column="89" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/ResetPasswordDialog.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/ResetPasswordDialog.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
           <caret line="36" column="67" lean-forward="false" selection-start-line="36" selection-start-column="67" selection-end-line="36" selection-end-column="67" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/StartLayout.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/StartLayout.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
         </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/devVsQA/RegisterDialogController.java" />
@@ -1427,11 +1394,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/devVsQA/controller/RegisterDialogController.java">
+    <entry file="file://$PROJECT_DIR$/test/ResetPasswordDialogControllerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2190">
-          <caret line="160" column="29" lean-forward="false" selection-start-line="160" selection-start-column="29" selection-end-line="160" selection-end-column="53" />
-          <folding />
+        <state relative-caret-position="1005">
+          <caret line="67" column="79" lean-forward="false" selection-start-line="67" selection-start-column="79" selection-end-line="67" selection-end-column="79" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1440,13 +1409,6 @@
         <state relative-caret-position="255">
           <caret line="28" column="25" lean-forward="false" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="25" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/ConnectionDialogControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="470">
-          <caret line="39" column="88" lean-forward="false" selection-start-line="39" selection-start-column="88" selection-end-line="39" selection-end-column="88" />
         </state>
       </provider>
     </entry>
@@ -1461,38 +1423,47 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/devVsQA/controller/ResetPasswordDialogController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-552">
+          <caret line="31" column="32" lean-forward="false" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#811#812#0" expanded="true" />
+            <element signature="e#852#853#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test/RegisterDialogControllerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="4" lean-forward="false" selection-start-line="12" selection-start-column="4" selection-end-line="16" selection-end-column="5" />
+        <state relative-caret-position="1110">
+          <caret line="77" column="93" lean-forward="false" selection-start-line="77" selection-start-column="93" selection-end-line="77" selection-end-column="93" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/devVsQA/controller/RegisterDialogController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2310">
+          <caret line="168" column="0" lean-forward="true" selection-start-line="168" selection-start-column="0" selection-end-line="168" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/devVsQA/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
-          <caret line="28" column="156" lean-forward="false" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="156" />
+          <caret line="28" column="153" lean-forward="false" selection-start-line="28" selection-start-column="148" selection-end-line="28" selection-end-column="153" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/ResetPasswordDialogControllerTest.java">
+    <entry file="file://$PROJECT_DIR$/test/ConnectionDialogControllerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="689">
-          <caret line="63" column="0" lean-forward="true" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/devVsQA/controller/ResetPasswordDialogController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="76" column="20" lean-forward="true" selection-start-line="76" selection-start-column="20" selection-end-line="76" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="540">
+          <caret line="39" column="88" lean-forward="false" selection-start-line="39" selection-start-column="88" selection-end-line="39" selection-end-column="88" />
+          <folding />
         </state>
       </provider>
     </entry>

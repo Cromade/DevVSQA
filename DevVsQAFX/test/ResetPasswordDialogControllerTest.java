@@ -29,37 +29,43 @@ public class ResetPasswordDialogControllerTest {
     public void should_return_invalid_newpassword1_empty(){
 
         ResetPasswordDialogController obj = new ResetPasswordDialogController();
+        obj.setConnectedUser(connectedUser);
         assertThat(obj.isResetValid("Motdepasse1", null, "Bonjour15")).isEqualTo("Nouveau mot de passe 1 invalide !\n");
     }
 
     @Test
     public void should_return_invalid_newpassword1(){
         ResetPasswordDialogController obj = new ResetPasswordDialogController();
-        assertThat(obj.isResetValid("Bonjour14" , "bonjour", "Bonjour15")).isEqualTo("Nouveau mot de passe 1 invalide !\n");
+        obj.setConnectedUser(connectedUser);
+        assertThat(obj.isResetValid("Motdepasse1" , "bonjour", "Bonjour15")).isEqualTo("Nouveau mot de passe 1 invalide !\n");
     }
 
     @Test
     public void should_return_invalid_newpassword2_empty(){
         ResetPasswordDialogController obj = new ResetPasswordDialogController();
-        assertThat(obj.isResetValid("Bonjour14" , "Bonjour15", null)).isEqualTo("Nouveau mot de passe 2 invalide !\n");
+        obj.setConnectedUser(connectedUser);
+        assertThat(obj.isResetValid("Motdepasse1" , "Bonjour15", null)).isEqualTo("Nouveau mot de passe 2 invalide !\n");
     }
 
     @Test
     public void should_return_invalid_newpassword2(){
         ResetPasswordDialogController obj = new ResetPasswordDialogController();
-        assertThat(obj.isResetValid("Bonjour14" , "Bonjour15", "bonjour")).isEqualTo("Nouveau mot de passe 2 invalide !\n");
+        obj.setConnectedUser(connectedUser);
+        assertThat(obj.isResetValid("Motdepasse1" , "Bonjour15", "bonjour")).isEqualTo("Nouveau mot de passe 2 invalide !\n");
     }
 
     @Test
     public void should_return_no_same_newpassword(){
         ResetPasswordDialogController obj = new ResetPasswordDialogController();
-        assertThat(obj.isResetValid("Bonjour14" , "Bonjour15", "Bonjour16")).isEqualTo("Les nouveaux mots de passe ne correspondent pas !\n");
+        obj.setConnectedUser(connectedUser);
+        assertThat(obj.isResetValid("Motdepasse1" , "Bonjour15", "Bonjour16")).isEqualTo("Les nouveaux mots de passe ne correspondent pas !\n");
     }
 
     @Test
     public void should_return_same_as_oldpassword(){
         ResetPasswordDialogController obj = new ResetPasswordDialogController();
-        assertThat(obj.isResetValid("Bonjour14" , "Bonjour14", "Bonjour14")).isEqualTo("Votre mot de passe doit etre different de \nl'ancient!\n");
+        obj.setConnectedUser(connectedUser);
+        assertThat(obj.isResetValid("Motdepasse1" , "Motdepasse1", "Motdepasse1")).isEqualTo("Votre mot de passe doit etre different de \nl'ancient!\n");
     }
 
 

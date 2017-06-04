@@ -43,9 +43,21 @@ public class RegisterDialogControllerTest {
     }
 
     @Test
+    public void should_return_invalid_lastname_number(){
+        RegisterDialogController obj = new RegisterDialogController();
+        assertThat(obj.isInputValid("12345","Jean","Jack","test@gmail.com","Capasse14","12/02/1994","la grande rue","Paris","75012")).isEqualTo("Nom invalide !\n");
+    }
+
+    @Test
     public void should_return_invalid_firstname(){
         RegisterDialogController obj = new RegisterDialogController();
         assertThat(obj.isInputValid("Phil",null,"Jack","test@gmail.com","Capasse14","12/02/1994","la grande rue","Paris","75012")).isEqualTo("Prenom invalide !\n");
+    }
+
+    @Test
+    public void should_return_invalid_firstname_number(){
+        RegisterDialogController obj = new RegisterDialogController();
+        assertThat(obj.isInputValid("Phil","12345","Jack","test@gmail.com","Capasse14","12/02/1994","la grande rue","Paris","75012")).isEqualTo("Prenom invalide !\n");
     }
 
     @Test
@@ -61,9 +73,15 @@ public class RegisterDialogControllerTest {
     }
 
     @Test
+    public void should_return_invalid_birthday_letters(){
+        RegisterDialogController obj = new RegisterDialogController();
+        assertThat(obj.isInputValid("Phil","Jean","Jack","test@gmail.com","Capasse14","azerty","la grande rue","Paris","75012")).isEqualTo("Date de naissance invalide !\n");
+    }
+
+    @Test
     public void should_return_invalid_birthday(){
         RegisterDialogController obj = new RegisterDialogController();
-        assertThat(obj.isInputValid("Phil","Jean","Jack","test@gmail.com","Capasse14","25/02/1994","la grande rue","Paris","75012")).isEqualTo("Date de naissance invalide !\n");
+        assertThat(obj.isInputValid("Phil","Jean","Jack","test@gmail.com","Capasse14","35/02/1994","la grande rue","Paris","75012")).isEqualTo("Date de naissance invalide !\n");
     }
 
     @Test
@@ -77,6 +95,11 @@ public class RegisterDialogControllerTest {
         RegisterDialogController obj = new RegisterDialogController();
         assertThat(obj.isInputValid("Phil","Jean","Jack","test@gmail.com","Capasse14","12/02/1994","la grande rue",null,"75012")).isEqualTo("Ville invalide !\n");
     }
+    @Test
+    public void should_return_invalid_city_number(){
+        RegisterDialogController obj = new RegisterDialogController();
+        assertThat(obj.isInputValid("Phil","Jean","Jack","test@gmail.com","Capasse14","12/02/1994","la grande rue","12345","75012")).isEqualTo("Ville invalide !\n");
+    }
 
     @Test
     public void should_return_invalid_postal(){
@@ -85,8 +108,20 @@ public class RegisterDialogControllerTest {
     }
 
     @Test
+    public void should_return_invalid_postal_letters(){
+        RegisterDialogController obj = new RegisterDialogController();
+        assertThat(obj.isInputValid("Phil","Jean","Jack","test@gmail.com","Capasse14","12/02/1994","la grande rue","Paris","azerty")).isEqualTo("Code postal invalide !\n");
+    }
+
+    @Test
     public void should_be_ok(){
         RegisterDialogController obj = new RegisterDialogController();
         assertThat(obj.isInputValid("Phil","Jean","Jack","test@gmail.com","Capasse14","12/02/1994","la grande rue","Paris","75012")).isEqualTo("");
+    }
+
+    @Test
+    public void should_return_user_already_exist(){
+        RegisterDialogController obj = new RegisterDialogController();
+        assertThat(obj.isInputValid("Farault","Bastien","Xenodeux","faraultbastien@gmail.com","Motdepasse1","08/03/1994","5 rue de truc","Paris","75000")).isEqualTo("L'uilisateur existe deja !\n");
     }
 }
