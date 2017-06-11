@@ -4,9 +4,6 @@ import org.junit.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-/**
- * Created by bastien on 03/06/2017.
- */
 public class ResetPasswordDialogControllerTest {
 
     // String isResetValid(String oldPasswordField, String newPasswordFieldOne, String newPasswordFieldTwo)

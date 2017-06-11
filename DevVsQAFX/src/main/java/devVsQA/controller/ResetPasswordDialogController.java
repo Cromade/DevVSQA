@@ -63,6 +63,8 @@ public class ResetPasswordDialogController implements IResetPasswordDialogContro
         }
     }
 
+    
+
     public String isResetValid(String oldPasswordField, String newPasswordFieldOne, String newPasswordFieldTwo) {
 
         String errorMessage ="";

@@ -1,11 +1,12 @@
 import devVsQA.controller.RegisterDialogController;
+import devVsQA.model.User;
 import org.junit.Test;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-/**
- * Created by bastien on 01/06/2017.
- */
 public class RegisterDialogControllerTest {
 
     // String isEmailAndPasswordValid(String email, String password);
@@ -122,6 +123,15 @@ public class RegisterDialogControllerTest {
     @Test
     public void should_return_user_already_exist(){
         RegisterDialogController obj = new RegisterDialogController();
-        assertThat(obj.isInputValid("Farault","Bastien","Xenodeux","faraultbastien@gmail.com","Motdepasse1","08/03/1994","5 rue de truc","Paris","75000")).isEqualTo("L'uilisateur existe deja !\n");
+        //Some raw data
+        List<User> userList = new ArrayList<User>();
+        User user1 = new User("Farault", "Bastien", "Xenodeux", "faraultbastien@gmail.com", "Motdepasse1", "08/03/1994", "5 rue de truc", "Paris", "75000");
+        User user2 = new User("Fernandes", "Dylan", "Cromade", "fernandesantunesdylan@gmail.com", "Motdepasse2", "06/09/1994", "6 rue de machin", "Paris", "75000");
+        User user3 = new User("Guitton", "Candice", "Billy8You", "guittoncandice@gmail.com", "Motdepasse3", "15/08/1992", "7 rue de bidule", "Paris", "75000");
+        userList.add(user1);
+        userList.add(user2);
+        userList.add(user3);
+        obj.setUserList(userList);
+        assertThat(obj.isInputValid("Farault", "Bastien", "Xenodeux", "faraultbastien@gmail.com", "Motdepasse1", "08/03/1994", "5 rue de truc", "Paris", "75000")).isEqualTo("L'utilisateur existe deja !\n");
     }
 }
