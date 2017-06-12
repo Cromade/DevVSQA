@@ -80,6 +80,7 @@ public class Main extends Application {
             RegisterDialogController controller = loader.getController();
             controller.setMain(this);
             controller.setDialogStage(dialogStage);
+            controller.setUserList(userList);
 
             // Show the dialog and wait until the user closes it
             dialogStage.showAndWait();

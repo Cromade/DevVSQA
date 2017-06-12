@@ -40,4 +40,36 @@ public class User {
     public void setPassword(String password) {
         this.password = password;
     }
+
+    public boolean equals(String lastnameTmp, String firstnameTmp, String usernameTmp, String emailTmp,
+                          String passwordTmp, String birthdayTmp, String addressTmp, String cityTmp, String postalCodeTmp) {
+        if (!lastname.equals(lastnameTmp)) {
+            return false;
+        }
+        if (!firstname.equals(firstnameTmp)) {
+            return false;
+        }
+        if (!username.equals(usernameTmp)) {
+            return false;
+        }
+        if (!email.equals(emailTmp)) {
+            return false;
+        }
+        if (!password.equals(passwordTmp)) {
+            return false;
+        }
+        if (!birthday.equals(birthdayTmp)) {
+            return false;
+        }
+        if (!address.equals(addressTmp)) {
+            return false;
+        }
+        if (!city.equals(cityTmp)) {
+            return false;
+        }
+        if (!postalCode.equals(postalCodeTmp)) {
+            return false;
+        }
+        return true;
+    }
 }
